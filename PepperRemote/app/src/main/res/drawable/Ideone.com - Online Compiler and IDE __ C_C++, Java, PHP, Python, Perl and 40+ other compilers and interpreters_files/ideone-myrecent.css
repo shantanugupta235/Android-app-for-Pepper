@@ -1,0 +1,288 @@
+
+#myrecent_filter_box,
+#publiclabel_info_box{
+	/*width: 200px;*/
+	border: 0px solid green;
+	float: left;
+	position: relative;
+	/*border-right: 1px solid #eeeeee;*/
+}
+
+
+#myrecent_filter_box ol{
+	list-style: none;
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	overflow-y: auto;
+}
+
+#myrecent_filter_box ol#list_language{
+	height: 100px;
+}
+
+
+#myrecent_filter_box ol.no-scroll{
+	overflow-y: hidden;
+}
+#myrecent_filter_box ol li{
+	padding: 0px;
+	width: 130px;
+	line-height: 18px;
+}
+#myrecent_filter_box ol li label{
+	display:block;
+	
+	position:relative;
+	width: 100%;
+	margin-bottom: 0px;
+}
+#myrecent_filter_box ol.selectable li.ui-selected{
+	border: 1px solid #bbbbbb;
+	background: #ddddff;
+}
+#myrecent_filter_box ol.selectable{
+	border: 1px solid white;
+	padding: 1px;
+}
+#myrecent_filter_box .selectable-border{
+	border: 1px solid white;
+}
+#myrecent_filter_box .selectable-border:hover {
+	/*border: 1px solid #cccccc;*/
+}
+#myrecent_filter_box .resizable-box .selectable-border:hover {
+	/*border-bottom: 1px solid #999999;*/
+}
+#myrecent_filter_box .description{
+	padding: 3px;
+	text-align: justify;
+	margin-left:6px;
+}
+
+#myrecent_filter_box .more{
+	margin-left: 5px;
+}
+
+#myrecent_action_box{
+	/*width: 735px;*/
+	border: 0px solid green;
+	/*margin-left: 200px;*/
+	/*padding-left: 10px;*/
+	/*border-bottom: 1px solid #eeeeee;*/
+	height: 40px;
+}
+#myrecent_action_box .top{
+	margin-bottom: 10px;
+}
+
+/* dla mobile pewne zmiany */
+.is-mobile #myrecent_action_box .btn-group{
+	position: initial;
+}
+.is-mobile #myrecent_action_box .btn-group .dropdown-menu{
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	top: 50%;
+	margin-top: -40%;
+}
+
+/*
+#myrecent{
+	width: 740px;
+	float: right;
+	margin-right: 5px;
+	margin-top:5px;
+}
+*/
+#myrecent .p{
+	margin-top: -40px;
+}
+/*
+#myrecent .pagination{
+	margin-left: auto;
+	margin-right: -10px;
+	position: relative;
+}
+#myrecent .pagination ul{
+	list-style:none outside none;
+	margin:0;
+	position:absolute;
+	right:10px;
+	top:-30px;
+}
+*/
+#myrecent .pagination ul li{
+	display: inline;	
+	margin-right: 5px;
+}
+
+#myrecent_delete{
+	width: 690px;
+	float: right;
+	margin-right: 5px;
+	margin-top:5px;
+}
+
+#myrecent .dropdown-menu > li > a{
+	padding: 3px 14px;
+}
+
+#myrecent table{
+	border-spacing: 0px;
+	width: 100%;
+}
+#myrecent table tr.chk{
+	height: 20px;
+}
+#myrecent tr td.border-bottom{
+	border-bottom: 1px solid #eeeeee;
+}
+#myrecent tr td.border-bottom-dark{
+	border-bottom: 1px solid #dddddd;
+}
+#myrecent tr:hover,
+#list_label li label:hover{
+	
+}
+
+#myrecent ul.tags{
+	margin: 0px;
+	padding: 0px;
+	padding-right: 5px;
+	display: inline;
+	list-style: none;
+	display: inline-block;
+	height: 18px;
+}
+#myrecent ul.tags li.tag a{
+	color: white;
+}
+
+#myrecent_tag_add{
+	position: absolute;
+	display: none;
+	width: 100px;
+	background: #dddddd;
+	border: 1px solid #bbbbbb;
+	cursor: default;
+}
+.myrecent_tag_add{
+	cursor: default;
+}
+#myrecent_tag_add input[type=text]{
+	display: inline;
+	width: 70px;
+}
+
+#myrecent_preview{
+	padding: 1em;
+	background: white;
+	border: 1px solid #dddddd;
+	display: none;
+	position: absolute;
+	outline: 5px;
+	margin: 5px;
+	min-width: 500px;
+}
+#myrecent_preview .source{
+	height: 200px;
+	max-height: 400px;
+	min-width: 350px;
+	overflow-y: auto;
+	height: 100%;
+}
+
+
+
+
+/**
+ * Inline notatka
+ */
+.note_label{
+	font-size: 12px;
+}
+span.note_input{
+	border: 0px;
+	display: none;
+	height: 17px;
+	padding-left: 3px;
+	color: red;
+}
+span.note_input .note_input_text{
+	margin-bottom: 0px;
+	line-height: 20px;
+	padding: 0px 5px;
+	font-size: 12px;
+}
+
+
+/**
+ * Tagi
+ */
+.tag{
+	position: relative;
+}
+.tag > a.delete{
+	color:red;
+	
+	display: none;
+}
+.tag:hover > a.delete{
+	display: inline;
+	
+}
+.tag > a.delete i{
+	color: #ddd;
+}
+.tag > a.delete:hover i{
+	color: #fff;
+}
+
+
+/**
+ * Zaznaczanie linii
+ */
+#myrecent #tbody_selectable td{
+	vertical-align: top;
+	line-height: 24px;
+}
+#myrecent #tbody_selectable input[type="checkbox"]{
+	margin-top: 0px;
+}
+#myrecent tr.ui-selected a.link{
+	font-weight: bold;
+}
+
+
+
+
+@media (max-width: 767px) {
+	#myrecent_filter_box ol{
+		height: auto;
+	}
+	#myrecent_filter_box ol > li{
+		display: inline-block;
+		width: auto;
+		margin-right: 10px;
+	}
+	#myrecent_filter_box ol > li > label{
+		display: inline-block;
+	}
+	#myrecent_filter_box ol > li > label > i{
+		display: none;
+	}
+	#myrecent_filter_box ol#list_language, 
+	#myrecent_filter_box ol#list_result{
+		height: auto;
+		overflow: hidden;
+	}
+	#myrecent .p {
+		margin-top: 0px;
+	}
+	#myrecent_filter_box > div{
+		display: none;
+	}
+}
