@@ -1,4 +1,4 @@
-package com.example.mohammed_2284.simpleapp.retrofit
+
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
