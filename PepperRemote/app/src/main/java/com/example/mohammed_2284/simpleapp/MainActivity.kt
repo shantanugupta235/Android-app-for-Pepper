@@ -1,4 +1,3 @@
-package com.example.mohammed_2284.simpleapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
